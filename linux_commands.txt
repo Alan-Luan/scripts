@@ -1,0 +1,5 @@
+# recursively delete directories with same name or pattern
+find . -name "dir_name" -type d -exec rm -r "{}" \;
+
+# recursively delete files with same name or pattern
+find . -name "file_name_or_pattern" -type f -delete
